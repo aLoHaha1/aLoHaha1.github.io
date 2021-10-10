@@ -161,8 +161,10 @@
 <h1 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h1><p>2021/10/10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。</p>
 <h1 id="初等数论"><a href="#初等数论" class="headerlink" title="初等数论"></a>初等数论</h1><h2 id="整除"><a href="#整除" class="headerlink" title="整除"></a>整除</h2><p><strong>定义：</strong> 设$a,b \in {\Bbb Z} ,a=0$。如果存在某个整数q $\in$ ${\Bbb Z}$，使得 $b=aq$，则称a整除b或b被a整除，记为$a\mid b$，且称a为b的因数，b为a的倍数。否则（即若a不整除b），则记为$a\nmid b$。</p>
 <p>​            显然，0是任何整数的倍数。对于任意整数$a$，$\pm 1,\pm a$都是它的因数，称这四个因数为整数$a$的平凡因数或显然因数，整数$a$的其他因数成为非显然因数或非平凡因数。</p>
-<p><strong>性质：</strong> 1. 如果$a\mid b$且$b\mid c$，则有$a\mid c$。</p>
-<ol start="2">
+<p><strong>性质：</strong> </p>
+<ol>
+<li><p>如果$a\mid b$且$b\mid c$，则有$a\mid c$。</p>
+</li>
 <li><p>如果$a\mid b$且$a\mid c$，当且仅当对于任意$x,y \in {\Bbb Z}$，有$a\mid bx+cy$。</p>
 </li>
 <li><p>设$m\neq 0$，$a\mid b$当且仅当$ma\mid mb$。</p>
@@ -170,19 +172,21 @@
 <li><p>如果$a\mid b$且$b\mid a$，则$a = \pm b$。</p>
 </li>
 </ol>
-<h2 id="带余除法"><a href="#带余除法" class="headerlink" title="带余除法"></a>带余除法</h2><p><strong>定义：</strong>设$a,b$是两个给定的整数，$a\neq b$，那么一定存在唯一的一对整数$q和r$，满足$b=aq+r,0\leq r &lt; |a|$</p>
+<h2 id="带余除法"><a href="#带余除法" class="headerlink" title="带余除法"></a>带余除法</h2><p><strong>定义：</strong> 设$a,b$是两个给定的整数，$a\neq b$，那么一定存在唯一的一对整数$q和r$，满足$b=aq+r,0\leq r &lt; |a|$</p>
 <p>   因此，$a\mid b$的充要条件是$r = 0$。</p>
 <p>​             其中，$q$称为$a$除$b$的不完全商记为$a\quad div\quad b$，$r$称为$a$除$b$的余数，记为$a\quad mod\quad b$。</p>
-<h3 id="公因数"><a href="#公因数" class="headerlink" title="公因数"></a>公因数</h3><p><strong>定义：</strong>设$a_1,a_2,b$是三个整数，若$d\mid a_1，d\mid a_2$，则称$d$是整数$a_1,a_2$的公因数。一般地，设$a_1,a_2,…,a_k$是$k$个整数，若$d\mid a_1,d\mid a_2,…,d\mid a_k$，则称$d$是整数$a_1,a_2,…,a_k$的公因数。</p>
+<h3 id="公因数"><a href="#公因数" class="headerlink" title="公因数"></a>公因数</h3><p><strong>定义：</strong> 设$a_1,a_2,b$是三个整数，若$d\mid a_1，d\mid a_2$，则称$d$是整数$a_1,a_2$的公因数。一般地，设$a_1,a_2,…,a_k$是$k$个整数，若$d\mid a_1,d\mid a_2,…,d\mid a_k$，则称$d$是整数$a_1,a_2,…,a_k$的公因数。</p>
 <h4 id="最大公因数"><a href="#最大公因数" class="headerlink" title="最大公因数"></a>最大公因数</h4><p><strong>定义：</strong>设$a_1,a_2$是两个不全为零的整数，把$a_1,a_2$的公因数中最大的整数称为$a_1$和$a_2$的最大公因数，记为$gcd(a_1,a_2)$或简记为$(a_1,a_2)$。当$gcd(a_1,a_2) = 1$时，称$a_1,a_2$互素。一般地，设$a_1,a_2,…,a_k$是$k$个不全为零的整数，把$a_1,a_2,…,a_k$的公因数中最大的称为$a_1,a_2,…,a_k$的最大公因数，记为$gcd(a_1,a_2,…,a_k)$或简记为$(a_1,a_2,…,a_k)$。当$(a_1,a_2,…,a_k) = 1$时，称$a_1,a_2,…,a_k$互素。</p>
-<p><strong>性质：</strong> 1. $(a,b) = (b,a) = (-a,b) = (a,-b)$。</p>
-<pre><code>2. 若$a\mid b$，则$(a,b) = a$。
-3. 存在整数$x,y$，使得整数$a,b$的最大公因数$(a,b)=xa+yb$
-4. 对于任意两个整数$x,y$，必有$(a,b)\mid ax+by$
-5. 若$a=bq+c$，$q$是一个整数，则有$(a,b)=(b,c)$
-6. 若$(a,c)=1,b\mid c$，则$(a,b)=1$
-7. $(\frac&#123;a&#125;&#123;(a,b)&#125;,\frac&#123;b&#125;&#123;(a,b)&#125;) =1$
-</code></pre>
+<p><strong>性质：</strong> </p>
+<ol>
+<li>$(a,b) = (b,a) = (-a,b) = (a,-b)$。</li>
+<li>若$a\mid b$，则$(a,b) = a$。</li>
+<li>存在整数$x,y$，使得整数$a,b$的最大公因数$(a,b)=xa+yb$</li>
+<li>对于任意两个整数$x,y$，必有$(a,b)\mid ax+by$</li>
+<li>若$a=bq+c$，$q$是一个整数，则有$(a,b)=(b,c)$</li>
+<li>若$(a,c)=1,b\mid c$，则$(a,b)=1$</li>
+<li>$(\frac{a}{(a,b)},\frac{b}{(a,b)}) =1$</li>
+</ol>
 <h3 id="公倍数"><a href="#公倍数" class="headerlink" title="公倍数"></a>公倍数</h3><p><strong>定义：</strong> 设$a_1,a_2,l$是三个整数，若$a_1\mid l,a_2\mid l$，则称$l$是整数$a_1,a_2$的公倍数。一般地，设$a_1,a_2,…,a_k$是$k$个整数，若$a_1\mid l,a_2\mid l,..,a_k\mid l$，称$l$是整数$a_1,a_2,…,a_k$的公倍数。</p>
 <h4 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a>最小公倍数</h4><p><strong>定义：</strong> 设$a_1,a_2$是两个不全为零的的整数，把$a_1,a_2$的所有公倍数中的最小整数称为整数$a_1,a_2$的最小公倍数，记为$lcm[a_1,a_2]$或简记为$[a_1,a_2]$。一般地，设$a_1,a_2,…,a_k$是$k$个不全为零的整数，把$a_1,a_2,…,a_k$的所有公倍数中的最小正整数称为整数$a_1,a_2,…,a_k$的最小公倍数，记为$lcm[a_1,a_2,…,a_k]$或简记为或简记为$[a_1,a_2,…,a_k]$。</p>
 <p>​            等价地，$[a_1,a_2]$是能够被$a_1,a_2$同时整除的最小正整数。</p>
@@ -190,11 +194,11 @@
 <h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><p><strong>内容：</strong> 设$a,b$是两个整数，不妨设$a&gt;b,b\neq 0$，依次做带余除法：</p>
 <p>$$a = bq_1+r_1,\quad 0&lt;r_1&lt;|b|$$</p>
 <p>$$b=r_1q_2+r_2,\quad 0&lt;r_2&lt;r_1$$</p>
-<p>$…$</p>
-<p>$r_{k-1}=r_kq_{k+1}+r{k+1},\quad 0&lt;r_{k+1}&lt;r_k$</p>
-<p>$…$</p>
-<p> $r_{n-2}=r_{n-1}q_n+r_n,\quad 0&lt;r_n&lt;r_{n-1}$</p>
-<p>$r_{n-1}=r_nq_{n+1}+r_{n+1},\quad r_{n+1}=0$</p>
+<p>$$…$$</p>
+<p>$$r_{k-1}=r_kq_{k+1}+r{k+1},\quad 0&lt;r_{k+1}&lt;r_k$$</p>
+<p>$$…$$</p>
+<p>$$r_{n-2}=r_{n-1}q_n+r_n,\quad 0&lt;r_n&lt;r_{n-1}$$</p>
+<p>$$r_{n-1}=r_nq_{n+1}+r_{n+1},\quad r_{n+1}=0$$</p>
 <p>经过有限步运算，必然存在$n$使得$r_{n+1}=0$。</p>
 <p><strong>算法：</strong> 计算两个整数的最大公因数</p>
 <p>输入：两个非负整数$a,b$，且$a\geq b$。</p>
@@ -202,8 +206,10 @@
 <p>1.当$b\neq 0$时，作</p>
 <p>​    $r\leftarrow a\quad mod\quad b,a\leftarrow b,b\leftarrow r$。</p>
 <p>2.返回$(a)$。</p>
-<p><strong>定理：</strong> 1.设$a,b$是两个整数，不妨设$a&gt;b$，则$(a,b)=r_n$，其中$r_n$是上述辗转相除法中得到的最后一个非零余数</p>
-<ol start="2">
+<p><strong>定理：</strong> </p>
+<ol>
+<li><p>设$a,b$是两个整数，不妨设$a&gt;b$，则$(a,b)=r_n$，其中$r_n$是上述辗转相除法中得到的最后一个非零余数</p>
+</li>
 <li><p>见最大公因数性质3.</p>
 </li>
 <li><p>对于任意整数$a,b,c$，若$c\mid a$且$c\mid b$，则$c\mid (a,b)$</p>
@@ -222,8 +228,10 @@
 </li>
 </ol>
 <p><strong>原理：</strong> 最大公因数的性质5.。</p>
-<p><strong>注意：</strong> 1. 辗转相除法又称欧几里得算法</p>
-<ol start="2">
+<p><strong>注意：</strong> </p>
+<ol>
+<li><p>辗转相除法又称欧几里得算法</p>
+</li>
 <li><p>当$a,b$中有负整数时，可根据最大公因数的性质1.将其中的负整数转变为正整数来求其最大公因数。</p>
 </li>
 <li><p>最大公因数的性质3.可由辗转相除法证明得到，而证明过程被称为扩展欧几里得算法</p>
