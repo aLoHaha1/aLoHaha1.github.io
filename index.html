@@ -157,7 +157,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="添加在开头"><a href="#添加在开头" class="headerlink" title="添加在开头"></a>添加在开头</h1><p>mathjax: true</p>
+        <p>mathjax: true</p>
 <h1 id="课程简介"><a href="#课程简介" class="headerlink" title="课程简介"></a>课程简介</h1><p>该课程主要分为<strong>初等数论</strong>和<strong>抽象代数</strong>两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。</p>
 <h1 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h1><p>2021/10/10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。</p>
 <h1 id="初等数论"><a href="#初等数论" class="headerlink" title="初等数论"></a>初等数论</h1><h2 id="整除"><a href="#整除" class="headerlink" title="整除"></a>整除</h2><p><strong>定义：</strong> 设$a,b \in {\Bbb Z} ,a=0$。如果存在某个整数q $\in$ ${\Bbb Z}$，使得 $b=aq$，则称a整除b或b被a整除，记为$a\mid b$，且称a为b的因数，b为a的倍数。否则（即若a不整除b），则记为$a\nmid b$。</p>
@@ -276,6 +276,52 @@
 <ol>
 <li>若$2^n+1$是素数，则n一定是2的方幂。</li>
 </ol>
+<h2 id="同余"><a href="#同余" class="headerlink" title="同余"></a>同余</h2><p><strong>定义：</strong> 给定三个整数$a,b,m$，如果$m\mid (a-b)$则称$a$模$m$同余于$b$或$a,b$模$m$同余，记作$a\equiv b(modm)$；若$m\nmid (a-b)$，则称$a,b$模$m$不同余。</p>
+<p><strong>性质：</strong> </p>
+<ol>
+<li><p>$a\equiv b(modm)$当且仅当存在整数$k$，使得$a=km+b$</p>
+</li>
+<li><p>设$a=k_1m+r_1,b=k_2m+r_2,0\leq r_1&lt;m,0\leq r_2&lt;m，a\equiv b(modm)$当且仅当$r_1=r_2$</p>
+</li>
+<li><p>设$a,b,c,m$是正整数</p>
+<p>3.1自反性：$a\equiv a(modm)$</p>
+<p>3.2对称性：若$a\equiv b(modm)$，则$b\equiv a(modm)$</p>
+<p>3.3传递性：若$a\equiv b(modm),b\equiv c(modm)$，则$a\equiv c(modm)$</p>
+</li>
+<li><p>设$a,b,d,a_1,a_2,b_1,b_2,m$为正整数，则</p>
+<p>4.1若$a_1\equiv a_2(modm),b_1\equiv b_2(modm)$，则$a_1+b_1\equiv a_2+b_2(modm)$</p>
+<p>4.2 若$a_1\equiv a_2(modm),b_1\equiv b_2(modm)$，则$a_1b_1\equiv a_2b_2(modm)$</p>
+<p>4.3若$ad\equiv bd(modm)$，且d和m互素，则$a\equiv b(modm)$</p>
+<p>4.4若$a\equiv b(modm)$，d是$a,b,m$的公因数，则$\frac{a}{d}\equiv \frac{b}{d}(mod\frac{m}{d})$</p>
+<p>4.5若$a\equiv b(modm),d\mid m,d&gt;0$，则$a\equiv b(modd)$</p>
+<p>4.6若$a\equiv b(modm_1),i=1,2,…,k$，则$a\equiv b(mod[m_1,m_2,…,m_k])$</p>
+</li>
+</ol>
+<h3 id="同余类与剩余系"><a href="#同余类与剩余系" class="headerlink" title="同余类与剩余系"></a>同余类与剩余系</h3><p><strong>定义：</strong> 对于给定的正整数m，整数同余的关系是一个等价关系。因此全体整数可按照对模m是否同于分为若干个两两不相交的集合，使得每一个集合中的任意两个整数对模m一定同余，而属于不同集合的任意两个整数对模m不同余。则上述的每一个集合称为<strong>模m的同余类</strong>或<strong>模m的剩余类</strong></p>
+<p><strong>定理：</strong> 对于给定的正整数m，有且恰有m个不同的模m的剩余类，为$[0],[1],[2],…,[m-1]$。</p>
+<p><strong>定义：</strong> 在模整数m的所有剩余类中各取一个代表元$a_1,a_2,…,a_m，a_i\in [i-1]，i=1,2,…,m$，则称$a_1,a_2,…,a_m$为模m的完全剩余系。完全剩余系$0,1,…,m-1$称为最小非负完全剩余系。（绝对最小完全剩余系为剩余系中各数相加的绝对值最小的完全剩余系）。</p>
+<p>通常情况下，以${\Bbb Z_m}$表示由m的最小非负完全剩余系集合${\Bbb Z_m}={0,1,2,…,m-1}$。</p>
+<p><strong>定理：</strong> </p>
+<ol>
+<li><p>设m是正整数，整数a满足$(a,m)=1$，b是任意整数。若x遍历模m的一个完全剩余系，则$ax+b$也遍历模m的一个完全剩余系。</p>
+</li>
+<li><p>设$m_1,m_2$是两个互素的正整数。如果x遍历模$m_1$的一个完全剩余系，y遍历模$m_2$的一个完全剩余系，则$m_1y+m_2x$遍历模$m_1m_2$的一个完全剩余系。</p>
+</li>
+</ol>
+<h4 id="既约剩余系"><a href="#既约剩余系" class="headerlink" title="既约剩余系"></a>既约剩余系</h4><blockquote>
+<p>在模m的一个剩余类中，如果有一个数与m互素，则该剩余类中所有的数均与m互素，这时称该剩余类与m互素</p>
+</blockquote>
+<p><strong>定义：</strong> 与m互素的剩余类的个数称为欧拉函数，记为$\phi(m)$。</p>
+<p><strong>定义：</strong> 在与m互素的$\phi(m)$个模m的剩余类中各取一个代表元$a_1,a_2,…,a_{\phi(m)}$，他们组合成的集合称为模m的一个既约剩余系或简化剩余系。${\Bbb Z_m}$中与m互素的整数构成模m的一个既约剩余系，称为最小非负既约剩余系，记为${\Bbb Z_m^*}$。</p>
+<p><strong>定理：</strong> </p>
+<ol>
+<li>设m是正整数。整数$a$满足$(a,m)=1$。若x遍历模m的一个既约剩余系，则$ax$也遍历模m的一个既约剩余系</li>
+<li>设$m_1 ,m_2$是两个互素的正整数。如果x是遍历模$m_1$的一个既约剩余系，y是遍历模$m_2$的一个既约剩余系，则$m_1y+m_2x$是遍历模$m_1m_2$的一个既约剩余系。</li>
+</ol>
+<blockquote>
+<p>显然，对任意一个素数p，$\phi(p)=p-1$</p>
+</blockquote>
+<p><strong>推论：</strong> 设$m,n$是两个互素的整数，则$\phi(mn)=\phi(m)\phi(n)$。</p>
 
       
 
@@ -987,20 +1033,5 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
