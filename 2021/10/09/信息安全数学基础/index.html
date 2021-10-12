@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="mathjax: true 课程简介该课程主要分为初等数论和抽象代数两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。 进度2021&#x2F;10&#x2F;10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。 初等数论整除定义： 设$a,b \in {\Bbb Z} ,a&#x3D;0$。如果存在某个整数q $\in$ ${\Bbb Z}$，使得 $">
+  <meta name="description" content="mathjax: true 课程简介该课程主要分为初等数论和抽象代数两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。 进度2021&#x2F;10&#x2F;10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。 2021&#x2F;10&#x2F;12 第二章与第三章部分内容复习结束，具体包括 初等数论整除定义： 设$a,b \in {\Bbb Z} ,a&#x3D;0$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/2021/10/09/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="mathjax: true 课程简介该课程主要分为初等数论和抽象代数两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。 进度2021&#x2F;10&#x2F;10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。 初等数论整除定义： 设$a,b \in {\Bbb Z} ,a&#x3D;0$。如果存在某个整数q $\in$ ${\Bbb Z}$，使得 $">
+<meta property="og:description" content="mathjax: true 课程简介该课程主要分为初等数论和抽象代数两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。 进度2021&#x2F;10&#x2F;10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。 2021&#x2F;10&#x2F;12 第二章与第三章部分内容复习结束，具体包括 初等数论整除定义： 设$a,b \in {\Bbb Z} ,a&#x3D;0$">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-09T08:20:26.740Z">
-<meta property="article:modified_time" content="2021-10-11T02:03:13.759Z">
+<meta property="article:modified_time" content="2021-10-12T12:44:30.260Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -162,6 +162,7 @@
         <p>mathjax: true</p>
 <h1 id="课程简介"><a href="#课程简介" class="headerlink" title="课程简介"></a>课程简介</h1><p>该课程主要分为<strong>初等数论</strong>和<strong>抽象代数</strong>两个部分，其中教材的第一至三章为初等数论部分，其后为抽象代数部分，复习笔记根据课程内容的逻辑结构进行。</p>
 <h1 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h1><p>2021/10/10 对于第一章的复习结束，具体内容包括整除、带余除法、辗转相除法与素数。</p>
+<p>2021/10/12 第二章与第三章部分内容复习结束，具体包括</p>
 <h1 id="初等数论"><a href="#初等数论" class="headerlink" title="初等数论"></a>初等数论</h1><h2 id="整除"><a href="#整除" class="headerlink" title="整除"></a>整除</h2><p><strong>定义：</strong> 设$a,b \in {\Bbb Z} ,a=0$。如果存在某个整数q $\in$ ${\Bbb Z}$，使得 $b=aq$，则称a整除b或b被a整除，记为$a\mid b$，且称a为b的因数，b为a的倍数。否则（即若a不整除b），则记为$a\nmid b$。</p>
 <p>​            显然，0是任何整数的倍数。对于任意整数$a$，$\pm 1,\pm a$都是它的因数，称这四个因数为整数$a$的平凡因数或显然因数，整数$a$的其他因数成为非显然因数或非平凡因数。</p>
 <p><strong>性质：</strong> </p>
@@ -324,6 +325,154 @@
 <p>显然，对任意一个素数p，$\phi(p)=p-1$</p>
 </blockquote>
 <p><strong>推论：</strong> 设$m,n$是两个互素的整数，则$\phi(mn)=\phi(m)\phi(n)$。</p>
+<p><strong>定理：</strong> 据上述推论，可得到欧拉函数的计算公式</p>
+<p>​            若$m=p_1^{e_1}p_2^{e_2}…p_k^{e_k}$，则$\phi(m)=m\prod_{i=1}^k(1-\frac{1}{p_i})$。</p>
+<h4 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h4><p><strong>定义&amp;定理：</strong> 设m是正整数，$r\in \Bbb{Z}_m$，若$(r,m)=1$，则存在整数$s\in \Bbb{Z}_m$，使得$rs\equiv 1(modm)$。整数s也称为r模整数m下的乘法逆元。</p>
+<p><strong>算法：</strong> 在$\Bbb{Z}_m$中计算乘法逆元。</p>
+<p>输入：$a\in \Bbb{Z}_m$</p>
+<p>输出：$a^{-1}modm$，如果其存在</p>
+<ol>
+<li>利用扩展欧几里得算法寻找整数x，y，使得$ax+my=d,d=(a,m)$。</li>
+<li>若$d&gt;1$，则$a^{-1}modm$不存在。否则返回$((x))$。</li>
+</ol>
+<h3 id="欧拉定理"><a href="#欧拉定理" class="headerlink" title="欧拉定理"></a>欧拉定理</h3><p><strong>内容：</strong> 设m是正整数。$r\in \Bbb{Z}_m$满足$(r,m)=1$，则$r^{\phi(m)}\equiv 1(modm)$</p>
+<p><strong>证明：</strong> 设$r_1,r_2,…,r_{\phi(m)}$是模m的一组既约剩余系，则$rr_1,rr_2,…,rr_{\phi(m)}$也是模m的一组既约剩余系，因此有</p>
+<script type="math/tex; mode=display">(rr_1)(rr_2)...(rr_{\phi(m)})\equiv r_1r_2...r_{\phi(m)}(modm)</script><blockquote>
+<p>既约剩余系$rr_1,rr_2,…,rr_{\phi(m)}$满足<script type="math/tex">(rr_1)(rr_2)...(rr_{\phi(m)})\equiv r_1r_2...r_{\phi(m)}(modm)</script>的证明：</p>
+<blockquote>
+<p>根据既约剩余系的定理1.，对任意$i,j=1,2,…,\phi(m)$，有$rr_i\equiv r_j(modm)$，</p>
+<p>根据同余性质4.2.，有$(rr_{i_1})(rr_{i_2})\equiv r_{j_1}r_{j_2}(modm)$，</p>
+<p>对上式进一步推广，显然有<script type="math/tex">(rr_1)(rr_2)...(rr_{\phi(m)})\equiv r_1r_2...r_{\phi(m)}(modm)</script>。</p>
+</blockquote>
+</blockquote>
+<p>化简上式，得$r^{\phi(m)}(r_1r_2…r_{\phi(m)})\equiv r_1r_2…r_{\phi(m)}(modm)$，</p>
+<p>又$r_1r_2…r_{\phi(m)}$与m互素，所以有$r^{\phi(m)}\equiv 1(modm)$。</p>
+<p><strong>费马小定理：</strong> 设p是一个素数，则对于任意整数$a$，均有$a^p\equiv a(modp)$。</p>
+<p><strong>模整数m的阶：</strong> 设$a\in \Bbb{Z}_m^*$，称满足$a^t\equiv 1(modm)$的最小正整数t为$a$在模m下的阶，记为$ord(a)$。</p>
+<p><strong>定理：</strong> 若$a\in \Bbb{Z}_m^*$的阶为t，s为正整数，且$a^s\equiv 1(modm)$，则$t\mid s$，特别地，$t\mid \phi(m)$。</p>
+<p><strong>Wilson定理：</strong> 设p是素数，$r_1,r_2,…,r_{p-1}$是模p的既约剩余系，则有$r_1r_2…r_{p-1}\equiv -1(modp)$。特别地有$(p-1)!\equiv -1(modp)$。</p>
+<h3 id="Bbb-Z-m-中重复平方乘算法"><a href="#Bbb-Z-m-中重复平方乘算法" class="headerlink" title="$\Bbb{Z}_m$中重复平方乘算法"></a>$\Bbb{Z}_m$中重复平方乘算法</h3><p><strong>算法：</strong> </p>
+<p>输入：$a\in \Bbb{Z}_m$，整数$0\leq k &lt; m$，其二进制表示为$k=\sum_{i=0}^tk_i2^i$。</p>
+<p>输出：$a^k(modm)$</p>
+<ol>
+<li><p>令$b\leftarrow 1$，如果$k=0$，则返回$(b)$</p>
+</li>
+<li><p>令$A\leftarrow a$。</p>
+</li>
+<li><p>若果$k_0 = 1$,则令$b\leftarrow a$。</p>
+</li>
+<li><p>对i从1到t，作：</p>
+<p>4.1 令$A\leftarrow A^2(modm)$;</p>
+<p>4.2 如果$k_i=1$，则令$b\leftarrow AB(modm)$。</p>
+</li>
+<li><p>返回$(b)$。</p>
+</li>
+</ol>
+<h2 id="RSA公钥加密算法"><a href="#RSA公钥加密算法" class="headerlink" title="RSA公钥加密算法"></a>RSA公钥加密算法</h2><p><strong>算法：</strong> RSA秘钥生成算法</p>
+<p>概要：每个实体产生一个RSA公钥以及相对应的私钥</p>
+<p>每个实体A进行如下步骤：</p>
+<ol>
+<li>产生两个大的素数随机数p和q，大小差不多</li>
+<li>计算$n=pq$和$\phi(n)=(p-1)(q-1)$。</li>
+<li>随机选择整数e，$1&lt;e&lt;\phi(n)$，使得$(e,\phi(n))=1$。</li>
+</ol>
+<blockquote>
+<p>可用辗转相除法验证e与$\phi(n)$是否互素。</p>
+</blockquote>
+<ol>
+<li>用扩展欧几里得算法计算唯一的一个整数d，$1&lt;d&lt;\phi(n)$使得$ed\equiv 1(mod\phi(n))$（即计算e在模$\phi(n)$下的乘法逆元）。</li>
+</ol>
+<p>输出：A的公钥$(n,e)$，私钥$(n,d)$。</p>
+<p><strong>算法：</strong> RSA加密和解密</p>
+<p>概要：B为A对消息m加密，A进行解密</p>
+<p>1.加密。B进行如下步骤：</p>
+<p>   1.1 获得A的认证的公钥$(n,e)$</p>
+<p>   1.2 把消息表示成区间$[0,n-1]$中的整数m</p>
+<p>   1.3 计算$c=m^e(modn)$</p>
+<p>   1.4 发送密文c给A</p>
+<p>2.解密。为了从c中恢复出明文m。A进行如下步骤：</p>
+<p>​    2.1 用私钥d恢复$m=c^d(modn)$</p>
+<p>​    2.2 输出明文m</p>
+<p><strong>命题：</strong> RSA加密算法是正确的，即不论m如何选取，若$c=m^e(modn)$，总有$m=c^d(modn)$。</p>
+<p><strong>RSA算法正确性证明：</strong> </p>
+<p>因为$de\equiv 1(mod\phi(n))$，所以存在整数k，使得$de=1+k\phi(n)$</p>
+<p>所以有$c^d(modn)=m^{ed}(modn)=m^{1+r\phi(n)}(modn)$</p>
+<blockquote>
+<p>关于上式第一个等号左右两边的证明：</p>
+<p>$c^d(modn)=[m^e(modn)]^d(modn)$</p>
+<p>证明：$[a^x(modp)]^y(modp)=a^{xy}(modp)$</p>
+<blockquote>
+<p>引理：$ab(modp)=<a href="modp">a(modp)\cdot b(modp)</a>$</p>
+<p>引理证明：</p>
+<p>令$a=k_1p+q_1,b=k_2p+q_2$</p>
+<p>$\begin{aligned} ab(modp)&amp;=<a href="modp">(k_1p+q_1)(k_2p+q_2)</a> \\ &amp;=<a href="modp">k_1k_2p^2+(k_1q_2+k_2q_1)p+q_1q_2</a> \\ &amp;=q_1q_2(modp) \\ &amp;=<a href="modp">(k_1p+q_1)(modp)\cdot(k_2p+q_2)(modp)</a> \\ &amp;=<a href="modp">a(modp)\cdot b(modp)</a> \end{aligned}$</p>
+<p>证毕</p>
+</blockquote>
+<p>$\begin{aligned} a^{xy}(modp)&amp;=(a^x\cdot a^x\cdot … a^x)(modp)\quad (y个a^x相乘) \\ &amp;=<a href="modp">a^x(modp)\cdot a^x(modp)\cdot  … a^x(modp)</a>\quad (y个a^x(modp)相乘) \\ &amp;=[a^x(modp)]^y(modp) \end{aligned}$</p>
+<p>证毕</p>
+</blockquote>
+<ol>
+<li><p>当$(m,n)=1$，由欧拉定理可知$m^{\phi(n)}\equiv 1(modn)$</p>
+<p>于是有，$m^{1+k\phi(n)}(modn)=m(m^{\phi(n)})^k(modn)=m(1)^k(modn)=m(modn)$</p>
+</li>
+<li><p>当$(m,n)\neq 1$，因为$n=pq$且$p$和$q$都是素数，所以$(m,n)$一定为$p$或者$q$。不妨设$(m,n)=p$，则$m$一定是$p$的倍数，设$m=xp$，$1\leq x &lt; q$。由欧拉定理可知$m^{\phi(q)}\equiv 1(modp)$</p>
+<p>又因为$\phi(q)=q-1$，于是有$m^{q-1}\equiv 1(modp)$</p>
+<p>所以有$(m^{q-1})^{k(p-1)}\equiv 1(modp)$</p>
+<p>即$m^{k\phi(n)}\equiv 1(modp)$</p>
+<p>于是存在整数b，使得$m^{k\phi(n)}= 1+bq$</p>
+<p>对上两边同乘m，得到$m^{1+k\phi(n)}=m+mbq$</p>
+<p>又因为$m=xp$，所以$m^{1+k\phi(n)}=m+xpbq=m+xbn$</p>
+<p>对上式取模n得$m^{1+k\phi(n)}\equiv m(modn)$</p>
+</li>
+</ol>
+<p>综上所述，对任意$0\leq m&lt;n$，有$c^d(modn)=m^{ed}\equiv m(modn)$。</p>
+<h3 id="Miller-Rabin概率素性测试"><a href="#Miller-Rabin概率素性测试" class="headerlink" title="Miller-Rabin概率素性测试"></a>Miller-Rabin概率素性测试</h3><p>Miiler-Rabin的概率素性检测算法是常用的算法之一，可用于RSA加密算法公钥生成过程中对素数p和q的检验。该算法依据费马小定理及以下引理。</p>
+<p><strong>引理：</strong> 如果p为大于2的素数，则方程$x^2\equiv1(modp)$的解只有$x\equiv \pm1$。</p>
+<p>​            该引理的逆否命题为：如果方程$x^2\equiv 1(modp)$有一解$x^2\neq \pm1(modp)$，那么p不为素数。</p>
+<p><strong>算法：</strong> Miller-Rabin概率性测试</p>
+<p>输入：奇数$n\geq 3$和安全参数$t\geq 1$</p>
+<p>输出：对于问题“n是素数？”的回答：“素数”或者“合数”</p>
+<ol>
+<li><p>写$n-1=2^sr$，r是奇数</p>
+</li>
+<li><p>对$i$从1到t进行下列计算。</p>
+<p>2.1 选择一个随机整数$a$，$2\leq a\leq n-2$。</p>
+<p>2.2 使用$\Bbb{Z}_m$中重复平方乘算法计算$y=a^r(modn)$。</p>
+<p>2.3 如果$y\neq 1,y\neq n-1$则执行下列计算：</p>
+<p>​    $j\leftarrow 1$。</p>
+<p>​    当$j\leq s-1$和$y\neq n-1$时进行下列计算：</p>
+<p>​        计算$y\leftarrow y^2(modn)$，</p>
+<p>​        如果y=1则返回（“合数”）。</p>
+<p>​        $j\leftarrow j+1$</p>
+<p>​    如果$y\neq n-1$则返回（“合数”）</p>
+</li>
+<li><p>返回（“素数”）。</p>
+</li>
+</ol>
+<blockquote>
+<p>倒着来的，具体算法内容参考CSDN收藏夹</p>
+</blockquote>
+<h2 id="同余方程"><a href="#同余方程" class="headerlink" title="同余方程"></a>同余方程</h2><p><strong>定义：</strong> 设$f(x)=a_nx^n+a_{n-1}x^{n-1}+…+a_1x+a_0$是一次数为n的整系数多项式，将含有变量x的同余式$f(x)\equiv 0(modm)$称为模m的同余方程，多项式的次数n称为同余方程的次数。若整数c满足$f(c)\equiv 0(modm)$，则称c为同余方程的一个解。</p>
+<p>显然的，c所在的剩余类都是同余方程的解。因此，在讨论同余方程时以一个剩余类作为一个解。若c是所在模m的剩余类中的代表元，记$x\equiv c(modm)$。</p>
+<p>当$c_1,c_2$均为同余方程的解时，只有两数关于模m不同余时才把他们看做同余方程的不同解。把所有模m两两不同余的解的个数称为同余方程的解数。因此，模m的同余方程最多有m个解。</p>
+<h3 id="一次同余方程"><a href="#一次同余方程" class="headerlink" title="一次同余方程"></a>一次同余方程</h3><p><strong>定理：</strong> 一次同余方程$ax\equiv b(modm)$有解的充要条件是$(a,m)\mid b$，而且当其有解时，解数为$(a,m)$。</p>
+<h3 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h3><p>如果$m_1,m_2,…,m_k$是两两互素的正整数，则同余方程组</p>
+<script type="math/tex; mode=display">\begin{cases}x\equiv a_1(modm_1) \\x\equiv a_2(modm_2) \\x\equiv a_3(modm_3) \\... \\x\equiv a_k(modm_k)\end{cases}</script><p>对模$m=m_1m_2…m_k$有唯一解。设$M_i=m_1m_2…m_{i-1}m{i+1}…m_k$，$M_i^‘$为$M_1$对模整数$m_i$的逆元，方程组的解为：</p>
+<script type="math/tex; mode=display">x\equiv M_1^‘M_1a_1+M_2^‘M_2a_2+...M_k^‘M_ka_k(modm)</script><h4 id="中国剩余定理加速RSA算法解密"><a href="#中国剩余定理加速RSA算法解密" class="headerlink" title="中国剩余定理加速RSA算法解密"></a>中国剩余定理加速RSA算法解密</h4><p><strong>算法：</strong> </p>
+<ol>
+<li><p>将下列内容作为私钥存储</p>
+<p>1.1 系统生成的随机素数$p,q$</p>
+<p>2.1 $d_p =d(mod p - 1)$</p>
+<p>3.1 $d_q = d (mod q – 1)$</p>
+<p>3.2 $q_{inv} = q-1 (mod p)$</p>
+</li>
+<li><p>加速算法如下</p>
+<p>2.1 $m_1 = c^{d_p} (mod p)$</p>
+<p>2.2 $m_2 = c^{d_q} (mod q)$</p>
+<p>2.3 $h = q_{inv}(m_1 -m_2 ) (mod p)$。( 若 m1 &lt; m2 则 $h= q_{inv} (m_1+ \lceil \frac{q}{p} \rceil p - m_2 ) (mod p)$ )</p>
+<p>2.4 $m = m_2 + hq (mod pq)$.</p>
+</li>
+</ol>
 
       
 
@@ -719,5 +868,20 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
