@@ -175,8 +175,8 @@
 </li>
 </ol>
 <h2 id="带余除法"><a href="#带余除法" class="headerlink" title="带余除法"></a>带余除法</h2><p><strong>定义：</strong> 设$a,b$是两个给定的整数，$a\neq b$，那么一定存在唯一的一对整数$q和r$，满足$b=aq+r,0\leq r &lt; |a|$</p>
-<p>   因此，$a\mid b$的充要条件是$r = 0$。</p>
-<p>​             其中，$q$称为$a$除$b$的不完全商记为$a\quad div\quad b$，$r$称为$a$除$b$的余数，记为$a\quad mod\quad b$。</p>
+<p>因此，$a\mid b$的充要条件是$r = 0$。</p>
+<p>​其中，$q$称为$a$除$b$的不完全商记为$a\quad div\quad b$，$r$称为$a$除$b$的余数，记为$a\quad mod\quad b$。</p>
 <h3 id="公因数"><a href="#公因数" class="headerlink" title="公因数"></a>公因数</h3><p><strong>定义：</strong> 设$a_1,a_2,b$是三个整数，若$d\mid a_1，d\mid a_2$，则称$d$是整数$a_1,a_2$的公因数。一般地，设$a_1,a_2,…,a_k$是$k$个整数，若$d\mid a_1,d\mid a_2,…,d\mid a_k$，则称$d$是整数$a_1,a_2,…,a_k$的公因数。</p>
 <h4 id="最大公因数"><a href="#最大公因数" class="headerlink" title="最大公因数"></a>最大公因数</h4><p><strong>定义：</strong> 设$a_1,a_2$是两个不全为零的整数，把$a_1,a_2$的公因数中最大的整数称为$a_1$和$a_2$的最大公因数，记为$gcd(a_1,a_2)$或简记为$(a_1,a_2)$。当$gcd(a_1,a_2) = 1$时，称$a_1,a_2$互素。一般地，设$a_1,a_2,…,a_k$是$k$个不全为零的整数，把$a_1,a_2,…,a_k$的公因数中最大的称为$a_1,a_2,…,a_k$的最大公因数，记为$gcd(a_1,a_2,…,a_k)$或简记为$(a_1,a_2,…,a_k)$。当$(a_1,a_2,…,a_k) = 1$时，称$a_1,a_2,…,a_k$互素。</p>
 <p><strong>性质：</strong> </p>
@@ -191,7 +191,7 @@
 </ol>
 <h3 id="公倍数"><a href="#公倍数" class="headerlink" title="公倍数"></a>公倍数</h3><p><strong>定义：</strong> 设$a_1,a_2,l$是三个整数，若$a_1\mid l,a_2\mid l$，则称$l$是整数$a_1,a_2$的公倍数。一般地，设$a_1,a_2,…,a_k$是$k$个整数，若$a_1\mid l,a_2\mid l,..,a_k\mid l$，称$l$是整数$a_1,a_2,…,a_k$的公倍数。</p>
 <h4 id="最小公倍数"><a href="#最小公倍数" class="headerlink" title="最小公倍数"></a>最小公倍数</h4><p><strong>定义：</strong> 设$a_1,a_2$是两个不全为零的的整数，把$a_1,a_2$的所有公倍数中的最小整数称为整数$a_1,a_2$的最小公倍数，记为$lcm[a_1,a_2]$或简记为$[a_1,a_2]$。一般地，设$a_1,a_2,…,a_k$是$k$个不全为零的整数，把$a_1,a_2,…,a_k$的所有公倍数中的最小正整数称为整数$a_1,a_2,…,a_k$的最小公倍数，记为$lcm[a_1,a_2,…,a_k]$或简记为或简记为$[a_1,a_2,…,a_k]$。</p>
-<p>​            等价地，$[a_1,a_2]$是能够被$a_1,a_2$同时整除的最小正整数。</p>
+<p>​等价地，$[a_1,a_2]$是能够被$a_1,a_2$同时整除的最小正整数。</p>
 <p><strong>性质：</strong> 设$a,b,m$是整数，$a\mid m,b\mid m$，则$[a,b]\mid m$。</p>
 <h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><p><strong>内容：</strong> 设$a,b$是两个整数，不妨设$a&gt;b,b\neq 0$，依次做带余除法：</p>
 <script type="math/tex; mode=display">a = bq_1+r_1,\quad 0<r_1<|b|</script><script type="math/tex; mode=display">b=r_1q_2+r_2,\quad 0<r_2<r_1</script><script type="math/tex; mode=display">...</script><script type="math/tex; mode=display">r_{k-1}=r_kq_{k+1}+r{k+1},\quad 0<r_{k+1}<r_k</script><script type="math/tex; mode=display">...</script><script type="math/tex; mode=display">r_{n-2}=r_{n-1}q_n+r_n,\quad 0<r_n<r_{n-1}</script><script type="math/tex; mode=display">r_{n-1}=r_nq_{n+1}+r_{n+1},\quad r_{n+1}=0</script><p>经过有限步运算，必然存在$n$使得$r_{n+1}=0$。</p>
@@ -199,7 +199,7 @@
 <p>输入：两个非负整数$a,b$，且$a\geq b$。</p>
 <p>输出：$a,b$的最大公因数。</p>
 <p>1.当$b\neq 0$时，作</p>
-<p>​    $r\leftarrow a\quad mod\quad b,a\leftarrow b,b\leftarrow r$。</p>
+<p>​$r\leftarrow a\quad mod\quad b,a\leftarrow b,b\leftarrow r$。</p>
 <p>2.返回$(a)$。</p>
 <p><strong>定理：</strong> </p>
 <ol>
@@ -259,23 +259,29 @@
 <li>若$p\mid ab$，则$p\mid a$或$p\mid b$。一般地，若$p\mid a_1a_2…a_k$，则必然存在某个$i$，$p\mid a_i$成立</li>
 </ol>
 <h3 id="算数基本定理"><a href="#算数基本定理" class="headerlink" title="算数基本定理"></a>算数基本定理</h3><p><strong>内容：</strong> 任何不为1的正整数n均可唯一的表示为有限个素数的幂的乘积，即</p>
-<p>​                $n=p_1^{a_1}p_2^{a_2}…p_k^{a_k}$</p>
-<p>​    其中，$p_1&lt;p_2&lt;…&lt;p_k$，$a_1,a_2,…,a_k$为正整数。上式称为n的标准分解式。</p>
-<p>​    算数基本定理又称为整数分解唯一定理。</p>
+<p>​                <script type="math/tex">n=p_1^{a_1}p_2^{a_2}...p_k^{a_k}</script></p>
+<p>​其中，$p_1&lt;p_2&lt;…&lt;p_k$，$a_1,a_2,…,a_k$为正整数。上式称为n的标准分解式。</p>
+<p>​算数基本定理又称为整数分解唯一定理。</p>
 <p><strong>推论：</strong> 若$a=p_1^{\alpha_1}p_2{\alpha_2}…p_k{\alpha_k},b=p_1^{\beta_1}p_2^{\beta_2}…p_k^{\beta_k}$其中$\alpha_i\geq 0,\beta_i\geq 0$，则有</p>
-<p>​    $(a,b)=p_1^{min(\alpha_1,\beta_1)}p_2^{min(\alpha_2,\beta_2)}…p_k^{min(\alpha_k,\beta_k)}$</p>
+<p>​<script type="math/tex">(a,b)=p_1^{min(\alpha_1,\beta_1)}p_2^{min(\alpha_2,\beta_2)}...p_k^{min(\alpha_k,\beta_k)}</script></p>
 <p>和</p>
-<p>​    $[a,b]=p_1^{max(\alpha_1,\beta_1)}p_2^{max(\alpha_2,\beta_2)}…p_k^{max(\alpha_k,\beta_k)}$</p>
+<p>​<script type="math/tex">[a,b]=p_1^{max(\alpha_1,\beta_1)}p_2^{max(\alpha_2,\beta_2)}...p_k^{max(\alpha_k,\beta_k)}</script></p>
 <p><strong>整数分解问题：</strong> 指给定一个整数n，找到其素因子分解</p>
-<p><strong>定理：</strong> 1. 素数有无穷多个</p>
+<p><strong>定理：</strong> </p>
 <ol>
-<li>形如$4k-1$或$4k+1$d的素数有无穷多个</li>
+<li><p>素数有无穷多个</p>
+</li>
+<li><p>形如$4k-1$或$4k+1$d的素数有无穷多个</p>
+</li>
 </ol>
 <h3 id="Eratosthenes筛法"><a href="#Eratosthenes筛法" class="headerlink" title="Eratosthenes筛法"></a>Eratosthenes筛法</h3><p><strong>定理：</strong> 设$n$是一个正合数，$p$是$n$的大于1的最小正因数，则$p$是素数且$p\leq\sqrt{n}$。</p>
 <p><strong>筛法定理：</strong> 设n是一个正整数。若果对于所有的素数$p\leq\sqrt{n}$，都有$p\nmid n$，则n是素数。</p>
-<h3 id="Mersenne素数与Fermat素数"><a href="#Mersenne素数与Fermat素数" class="headerlink" title="Mersenne素数与Fermat素数"></a>Mersenne素数与Fermat素数</h3><p><strong>定理：</strong> 1. 设n&gt;1是一个正整数，若$a^n-1$是素数，则n=2，n是素数。</p>
+<h3 id="Mersenne素数与Fermat素数"><a href="#Mersenne素数与Fermat素数" class="headerlink" title="Mersenne素数与Fermat素数"></a>Mersenne素数与Fermat素数</h3><p><strong>定理：</strong> </p>
 <ol>
-<li>若$2^n+1$是素数，则n一定是2的方幂。</li>
+<li><p>设n&gt;1是一个正整数，若$a^n-1$是素数，则n=2，n是素数。</p>
+</li>
+<li><p>若$2^n+1$是素数，则n一定是2的方幂。</p>
+</li>
 </ol>
 <h2 id="同余"><a href="#同余" class="headerlink" title="同余"></a>同余</h2><p><strong>定义：</strong> 给定三个整数$a,b,m$，如果$m\mid (a-b)$则称$a$模$m$同余于$b$或$a,b$模$m$同余，记作$a\equiv b(modm)$；若$m\nmid (a-b)$，则称$a,b$模$m$不同余。</p>
 <p><strong>性质：</strong> </p>
@@ -340,7 +346,7 @@
 <blockquote>
 <p>根据既约剩余系的定理1.，对任意$i,j=1,2,…,\phi(m)$，有$rr_i\equiv r_j(modm)$，</p>
 <p>根据同余性质4.2.，有$(rr_{i_1})(rr_{i_2})\equiv r_{j_1}r_{j_2}(modm)$，</p>
-<p>对上式进一步推广，显然有<script type="math/tex">(rr_1)(rr_2)...(rr_{\phi(m)})\equiv r_1r_2...r_{\phi(m)}(modm)</script>。</p>
+<p>对上式进一步推广，显然有<script type="math/tex">(rr_1)(rr_2)...(rr_{\phi(m)})\equiv r_1r_2...r_{\phi(m)}(modm)</script><br>证毕。</p>
 </blockquote>
 </blockquote>
 <p>化简上式，得$r^{\phi(m)}(r_1r_2…r_{\phi(m)})\equiv r_1r_2…r_{\phi(m)}(modm)$，</p>
@@ -1182,20 +1188,5 @@ MathJax.Hub.Queue(function() {
 
 </div>
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
